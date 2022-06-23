@@ -1,11 +1,12 @@
 //function to dropdown the menu 
-function menu(idex){
-    if (idex.style.display == 'none')
-    idex.style.display='';
+function myFunction(element){
+    if (element.nextElementSibling.style.display == 'none')
+    element.nextElementSibling.style.display='';
     else
-    idex.style.display='none'
-    }
+    element.nextElementSibling.style.display='none'
+  }
+
 // change icon plus to minus and viceversa
 function changeIcon(x) {
-        x.classList.toggle("fa-minus-circle");
+    x.firstElementChild.classList.toggle("fa-minus-circle");
     }
